@@ -1,0 +1,163 @@
+.nav-bar{
+    position: relative;   
+}
+.nav-bar{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    transform: none;
+}
+.carousel-inner{
+    margin-right: -20px;
+    margin-right: -20px;
+}
+
+.content{
+    border: 1px;
+    background-color:whitesmoke;
+    padding:3%;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+.img1{
+    border-radius: 25px;
+   padding: 15%;
+    
+}
+
+
+.c2{
+    
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.4);
+    
+}
+
+
+#card{
+    border-radius: 25px;
+}
+
+.mont{
+font-family: 'Inika', serif;
+font-family: 'Montserrat', sans-serif;}
+.container1 {
+  font-family: sans-serif;
+  color: #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  
+}
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.gradienttext {
+  
+  font-weight: bold;
+  margin: 5px;
+  font-size: 3vw;
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.gradienttext1 {
+
+  background: linear-gradient(
+    to right,
+    #FF7700 5%,
+    #E04D01 20%,
+    #035397 30%,
+    #2A2550 80%
+    
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textShine1 5s ease-in-out infinite alternate;
+}
+
+
+
+
+
+.navbar {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: static;
+  }
+}
+
+.banner {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    position: static;
+  }
+}
+
+.navbar-custom {
+  background-color: #3d356b;
+}
+@media (max-width: 768px) {
+  #card0 {
+    border-radius: 20px; 
+  }
+
+
+}
+@media (max-width: 425px) {
+  #card {
+    border-radius: 10px; 
+  }
+    .img1{
+    border-radius: 18px;
+  }
+
+}
+@media (max-width: 320px) {
+  #card {
+    border-radius: 5px; 
+  }
+  .img1{
+    padding: 10%;
+  }
+}
+.font1
+{
+  font-family: 'Pacifico', cursive;
+}
+.card_title{
+  text-align: center;
+}

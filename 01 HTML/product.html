@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Indian Trade Corporation</title>
+    <link rel="stylesheet" href="../02 CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../02 CSS/about_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-a1zbb5vp6sgl4k/a4PvP8FNlHgV62W7bXcB5c6U+2jbDRWFRfYHwAcd0nmTpbdE5" crossorigin="anonymous">
+    <link rel="stylesheet" href="../02 CSS/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inika&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../02 CSS/trans1/images/strans1.css">
+    <link rel="icon" href="../04 IMAGES/FAV.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .flip-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 15vw;
+}
+@media (max-width:425px) {
+    .flip-card{
+        height: 12vw;
+    }
+    #card0{
+        border-radius: 5px;
+    }
+    #card1{
+        top: 4vw;
+    }
+    
+}
+
+
+/* Add a CSS animation to flip the card automatically */
+@keyframes autoFlip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+  /* Apply the animation and set the duration to 5 seconds */
+  animation: autoFlip 3s infinite alternate; /* Auto flip every 5 seconds */
+}
+
+
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-text{
+    color: #EEE2DE;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+        
+        /* Add custom CSS for rounded cards */
+        .rounded-card {
+            border-radius: 15px;
+            margin: 20px;
+            padding: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            margin-top: 50px;
+
+            padding: 0;
+            width: 200px;
+            background-color: #FF7700;
+        }
+        .card-bg-image {
+            width: 100%;
+            height: 120%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 15px;
+        }
+  
+ 
+
+
+
+        #head2{
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            
+        }
+
+        #list{
+            font-size: 2px;
+        }
+        #head{
+            
+            text-shadow: 2px 2px 4px #858585;
+            font-weight: 1000;
+            font-size: 200%;
+            color: #035397;
+            padding-top: 75px;
+
+        }
+        @media(max-width:728px)
+        {
+ 
+            .card{
+                position: static;
+                max-width: 70%;
+            }
+            .card-text{
+                font-size: 70%;
+            }
+            #head{
+
+                font-size: 6vw;
+                
+            }
+        }
+        .card-text{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="../04 IMAGES/banner3.jpg" class="img-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark  navbar-custom">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+      
+              <li class="nav-item ">
+                <a class="nav-link" href="../01 HTML/about_us.html">About us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../01 HTML/product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../01 HTML/contact_us.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container1">
+        <h1 class="gradienttext mont">Our Top Products</h1>
+      </div>
+      <br>
+    <div class="content">
+      <div class="container">
+        <div class="row mb-5">
+            <div class="col-3 card1" id="card1">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front c2 card0" id="card0">
+                            <img src="../04 IMAGES/card/asian paints.png" alt="X" class="card-img-top img1">
+                        </div>
+                        <div class="flip-card-back c2 card0" id="card0" style="padding: 15%;">
+                            <img src="../04 IMAGES/card/crompton.png" alt="Y" class="card-img-back img2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-3 card1" id="card1">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front c2 card0" id="card0">
+                            <img src="../04 IMAGES/card/Nippon_Paint_Logo.png" alt="X" class="card-img-top img1">
+                        </div>
+                        <div class="flip-card-back c2 card0" id="card0" style="padding: 15%;">
+                            <img src="../04 IMAGES/card/renacon.png" alt="Y" class="card-img-back img2">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-3 card1" id="card1">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front c2 card0" id="card0">
+                            <img src="../04 IMAGES/card/supreme.png" alt="X" class="card-img-top img1">
+                        </div>
+                        <div class="flip-card-back c2 card0" id="card0" style="padding: 15%;">
+                            <img src="../04 IMAGES/card/saint gobain.png" alt="Y" class="card-img-back img2">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-3 card1" id="card1">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front c2 card0" id="card0">
+                            <img src="../04 IMAGES/card/norton.png" alt="X" class="card-img-top img1">
+                        </div>
+                        <div class="flip-card-back c2 card0" id="card0" style="padding: 15%;">
+                            <img src="../04 IMAGES/card/pidilite.png" alt="Y" class="card-img-back img2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
+            <h1 class="gradienttext mont" style="padding-top: 4%;">Entire Product Range</h1>
+    <div class="container"  id="cement">
+        <h1 id="head" class="mont ">CEMENTS</h1>
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/Dalmia-Cement.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Dalmia</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/ramco2.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Ramco</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/ultra tech.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Ultra Tech</b></p>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+
+    <div class="container"  id="aac">
+        <h1 id="head" class="mont">AAC Blocks</h1>
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/renacon.jfif" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Renacon</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="container" id="tools">
+        <h1 id="head" class="mont">TOOLS AND POWER TOOLS</h1>
+        <div class="row">
+            <div class="col-6 col-md-3 ">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/bosch3.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Bosch</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/taparia3.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Taparia</b></p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/venus tool.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Venus</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/cumi5.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Cumi</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="plumbing">
+        <h1 id="head" class="mont">PLUMBING</h1>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/astral2.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Astra Pipes</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/supreme_pipes.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Supreme</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/parry.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Parryware</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/watertec.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Water Tec</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card" id="n1">
+                    <img class="card-img-top" src="../04 IMAGES/products/allwin4.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Allwin</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container" id="electrical">
+        <h1 id="head" class="mont">ELECTRICAL</h1>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/resize-1692815377371418739legrand3.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Legrand</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/kundan1.jpeg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Kundan</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/finolex.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Finolex</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/polycab.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Polycab</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card" id="n1">
+                    <img class="card-img-top" src="../04 IMAGES/products/kabel.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>RR Kabel</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card" id="n1">
+                    <img class="card-img-top" src="../04 IMAGES/products/l&t2.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>L&T</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card" id="n1">
+                    <img class="card-img-top" src="../04 IMAGES/products/resize-1692817484146113276crompton.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Crompton</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="ppe">
+        <h1 id="head" class="mont">PPE KITS</h1>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/karam.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Karam</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/tiger3.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Tiger</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/resize-1692818286378554251hilson2.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Hilson</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="paints">
+        <h1 id="head" class="mont">PAINTS</h1>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/asianpaints2.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Asian paints</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/nippon.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Nippon Paints</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/sheenlac.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Sheenlac</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/t1.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Tarlac</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card rounded-card" id="n1">
+                    <img class="card-img-top" src="../04 IMAGES/products/ppg1.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Asian PPG</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container" id="construction">
+        <h1 id="head" class="mont">CONSTRUCTION CHEMICAL</h1>
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/resize-1692819830580961796fosroc.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Fosroc</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/myk.jpg" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>MYK Latricate</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card rounded-card">
+                    <img class="card-img-top" src="../04 IMAGES/products/brand.png" alt="Card Image" style="width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                        <p class="card-text"><b>Pidilite</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer >
+    <div class="container">
+      <h1 style="text-align: left;  font-size: 3vw;" class="font1">Indian Trade Corporation</h1>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+          <div class="col-sm-4">
+              
+          </div>
+          <div class="col-sm-8">
+              <p>by Twinfinity</p>
+          </div>
+      </div>
+  </div>
+</footer>
+</html>
